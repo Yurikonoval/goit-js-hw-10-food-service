@@ -36,14 +36,12 @@ toggle.addEventListener(`click`, change);
 function change(e){
     if (localStorage.getItem(STORAGE_KEY) === Theme.DARK){
         body.classList.remove(Theme.DARK);
-        body.classList.add(Theme.LIGHT);
-        // localStorage.removeItem(STORAGE_KEY);
+        body.classList.add(Theme.LIGHT);        
         localStorage.setItem(STORAGE_KEY, Theme.LIGHT);
     }
 else {
     body.classList.remove(Theme.LIGHT);
-        body.classList.add(Theme.DARK);
-        // localStorage.removeItem(STORAGE_KEY);
-        localStorage.setItem(STORAGE_KEY, Theme.DARK);
+    body.classList.add(Theme.DARK);        
+    localStorage.setItem(STORAGE_KEY, Theme.DARK);
 }
 };
